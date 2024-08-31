@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manokamana Innovation</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #3a5a40;
+            padding: 20px;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        header nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .hero {
+            background-image: url('agriculture-background.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .hero h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 1.2em;
+            margin: 20px 0;
+        }
+        .hero .cta-btn {
+            background-color: #8ca972;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        section {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .about img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .about {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+        .about .text {
+            flex: 1;
+        }
+        .services {
+            text-align: center;
+        }
+        .services h2, .portfolio h2, .news h2, .contact h2 {
+            margin-bottom: 20px;
+            color: #3a5a40;
+        }
+        .services .service-item {
+            margin-bottom: 20px;
+        }
+        .portfolio .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .contact form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .contact form input, .contact form textarea {
+            padding: 10px;
+            font-size: 1em;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .contact form button {
+            grid-column: span 2;
+            background-color: #8ca972;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            font-size: 1em;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #3a5a40;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">Manokamana Innovation</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Services</a>
+            <a href="#">Portfolio</a>
+            <a href="#">News</a>
+            <a href="#">Contact Us</a>
+        </nav>
+        <a href="#" class="cta-btn">Get in Touch</a>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Empowering Agriculture, Transforming Lives</h1>
+        <p>Innovative solutions for sustainable growth in rural communities.</p>
+        <a href="#about" class="cta-btn">Learn More</a>
+    </div>
+
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <div class="text">
+            <h2>About Manokamana Innovation</h2>
+            <p>Manokamana Innovation is a pioneer in the agricultural industry, playing a managerial role in the overall agricultural value chain. We are committed to promoting economic development in rural areas by engaging in both financial and non-financial activities related to agriculture.</p>
+        </div>
+        <img src="about-us.jpg" alt="About Us">
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <h2>Our Services</h2>
+        <div class="service-item">
+            <h3>Agricultural Management</h3>
+            <p>Strategic planning and management of agricultural projects.</p>
+        </div>
+        <div class="service-item">
+            <h3>Financial Services</h3>
+            <p>Offering financial support for agricultural ventures.</p>
+        </div>
+        <div class="service-item">
+            <h3>Consulting</h3>
+            <p>Expert advice on improving agricultural practices.</p>
+        </div>
+        <div class="service-item">
+            <h3>Supply Chain Management</h3>
+            <p>Enhancing efficiency across the agricultural value chain.</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio">
+        <h2>Our Impact</h2>
+        <div class="gallery">
+            <img src="project1.jpg" alt="Project 1">
+            <img src="project2.jpg" alt="Project 2">
+            <img src="project3.jpg" alt="Project 3">
+            <img src="project4.jpg" alt="Project 4">
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section class="news">
+        <h2>Latest News</h2>
+        <article>
+            <h3>New Agricultural Project Launched</h3>
+            <p>Manokamana Innovation has launched a new project aimed at enhancing sustainable farming practices in rural areas...</p>
+        </article>
+        <article>
+            <h3>Upcoming Event: Agriculture Expo 2024</h3>
+            <p>Join us at the Agriculture Expo 2024 where we will be showcasing our latest innovations and services...</p>
+        </article>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section class="contact">
+        <h2>Get in Touch</h2>
+        <form>
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email">
+            <input type="text" placeholder="Subject">
+            <textarea rows="5" placeholder="Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Manokamana Innovation. All rights reserved.</p>
+        <div>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+        </div>
+    </footer>
+
+</body>
+</html>
